@@ -63,47 +63,11 @@ cite {
   font-style: normal;
 }
 
-/* p {
-  line-height: 1.4em;
-  margin-bottom: 2rem;
-} */
-
 .resume-link:hover {
   color: white;
   transition: all 0.3s ease-in-out;
   transform: scale(1.2);
   background-color: red;
-}
-
-.resume-link {
-  text-decoration: none;
-  color: red;
-  margin: auto;
-  border: 2px solid white;
-  padding: 1rem;
-  font-weight: bold;
-  background-color: white;
-}
-
-@media (min-width: 800px) {
-  .about-container {
-    display: flex;
-  }
-
-  .about-text {
-    margin-left: 2rem;
-    margin-top: 2rem;
-  }
-
-  .about-image {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto 2rem;
-    object-fit: contain;
-    filter: grayscale(100%);
-    max-width: 400px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -121,7 +85,6 @@ cite {
     object-fit: contain;
     filter: grayscale(100%);
   }
-  
 
   article {
     display: flex;
@@ -141,6 +104,21 @@ cite {
     display: flex;
     flex-direction: row;
     margin-top: 0.5rem;
+  }
+
+  .resume-link {
+    text-decoration: none;
+    color: red;
+    margin-top: 2rem;
+    border: 2px solid white;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  .resume-text {
+    line-height: 1.4em;
+    margin-bottom: 2rem;
   }
 }
 
@@ -165,10 +143,9 @@ h3 {
   padding-top: 1rem;
 }
 
-    p {
-        line-height: 1.4em;
-      }
-
+p {
+  line-height: 1.4em;
+}
 
 .project-button {
   padding: 1rem;
@@ -183,6 +160,25 @@ h3 {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 800px) {
+  .about-container {
+    display: flex;
+  }
+
+  .about-text {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-image {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 2rem;
+    object-fit: contain;
+    filter: grayscale(100%);
+    max-width: 400px;
+  }
+
   article {
     max-width: 960px;
     margin: 0 auto 2rem;
@@ -196,6 +192,16 @@ h3 {
   p {
     line-height: 1.4em;
     margin-bottom: 2rem;
+  }
+
+  .resume-link {
+    text-decoration: none;
+    color: red;
+    margin: auto;
+    border: 2px solid white;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: white;
   }
 }
 
