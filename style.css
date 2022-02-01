@@ -1,262 +1,277 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    height: 100vh;
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+span {
+  color: red;
+}
+
+.header-button {
+  font-size: 1rem;
+  padding: 0rem 1rem;
+  border: 2px solid red;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  margin-top: 2rem;
+}
+
+.header-button:hover {
+  color: white;
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-me {
+  margin-left: 20rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+.about-image:hover {
+  filter: grayscale(0);
+}
+
+blockquote {
+  margin-top: 7rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  font-style: normal;
+}
+
+p {
+  line-height: 1.4em;
+  margin-bottom: 2rem;
+}
+
+.resume-link:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+  background-color: red;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: red;
+  margin: auto;
+  border: 2px solid white;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+@media (min-width: 800px) {
+  .about-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
+  }
 
-span{
-    color: red;
-}
+  .about-text {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 
-.about-me{
-    margin-left: 28rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.about-container{
-    max-height: 960px;
-    margin: auto;
-    display: flex;
-}
-
-section{
-    padding: 2rem;
-}
-
-.about-image{
-    max-width: 400px;
+  .about-image {
     display: block;
     width: 100%;
-    margin-left: 4rem;
-    filter: grayscale(100%);
+    max-width: 350px;
+    margin: 0 auto 2rem;
     object-fit: contain;
+    filter: grayscale(100%);
+    max-width: 400px;
+  }
 }
 
-section{
-    padding: 4rem;
-}
-
-blockquote{
-    margin-top: 7rem;
-    font-size: 1.5rem;
-    font-style: italic;
+@media only screen and (max-width: 600px) {
+  .header-text {
     text-align: center;
-}
-
-cite{
+  }
+  .about-me {
+    margin: 0 auto;
+  }
+  .about-image {
     display: block;
-    margin-top: 1rem;
-    font-size: 0.75rem;
-    font-style: normal;
-}
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+  }
+  .project {
+  }
 
-.about-text{
-    margin-right: 10rem;
-    margin-left: 2rem;
-}
-p{
-    margin-bottom: 2em;
-    line-height: 1.4em;
-}
-
-    .about-container{
-        display: flex;
-    }
-
-h2{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-article{
+  article {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
+  }
 
-.article-img{
-    margin-left: 2rem;
-        max-width: 350px;
-        object-fit: cover;
-    }
-
-    .project-wrapper{
-        display: flex;
-        
-    }
-    
-    
-    .contact{
-        text-align: center;
-        position: relative;
-        margin-top: 100px;
-        color: white;
-        background-color: red;
-    }
-    .resume.link{
-        padding: 1rem;
-        border: 2px solid white;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-    }
-     .header-button{
-        padding: 1rem;
-        border: 2px solid red;
-        font-weight: bold;
-        text-decoration: none;
-        color: red;
-        font-size: 1rem;
-        border-radius: 5rem;
-    }
-
-    .header-button:hover{
-        color: white;
-        background-color: red;
-        transition: all 0.3s ease-in-out;
-    }
-    .button:hover{
-        color: white;
-        background-color: red;
-        transition: all 0.3s ease-in-out;
-    }
-
-.project-button{
-    padding: 1rem;
+  .article-img {
+    max-width: 350px;
+    object-fit: contain;
+  }
+  .project-button {
     border: 2px solid red;
     font-weight: bold;
     text-decoration: none;
     color: red;
-    
-}
-.project-button:hover{
-    color: white;
-    background-color: red;
-    transition: all 0.3s ease-in-out;
-}
-
-.button{
-    text-decoration: none;
-    color: red;
-    margin:  0 0.5rem;
-    border: 2px solid white;
-    padding: 1rem;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 5rem;
-
-}
-
-.button:hover{
-        color: white;
-        transition: all 0.3s ease-in-out;
-        transform: scale(1.2);
-        background-color: red;
-    }
-
-
-.social{
     display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
-} 
-
-
-.link:hover{
-    color: white;
-    background-color: red;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.2);
-
+    flex-direction: row;
+    margin-top: 0.5rem;
+  }
 }
 
-.link{
-    text-decoration: none;
-    color: black;
-    margin:  1rem;
-    border: 2px solid white;
-    padding: 1rem;
-    font-weight: bold;
-    border-radius: 5rem;
-    background-color: white;
+.project {
+  margin-top: 4rem;
 }
 
-.resume-link:hover{
-    color: white;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.2);
-    background-color: red;
-
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-.resume-link{
-    text-decoration: none;
-    color: red;
-    margin:  0 0.5rem;
-    border: 2px solid white;
-    padding: 1rem;
-    font-weight: bold;
-    background-color: white;
-
-}
-footer{
-    padding: 4rem;
-    text-align: center;
-    background-color: #333;
-    color: white;
-} 
-
-.footer-text{
-    text-align: center;
-    margin-left: 4rem;
+h3 {
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
-.about{
-    color: white;
-    background-color: red;
-   
+.project-wrapper {
+  display: flex;
+  padding-top: 1rem;
 }
 
-.about::after{
-    content: '';
-    position:relative;
-    right: 0;
-    bottom: -180px;
-    width: 10rem;
-    height: 0;
-    margin-right: 0;
-    margin-left: -100;
-    border-top: 100px solid red;
-    border-right: 100vw solid transparent;
+.project-button {
+  padding: 1rem;
+  border: 2px solid red;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+.project-button:hover {
+  color: white;
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 800px) {
+  article {
+    max-width: 960px;
+    margin: 0 auto 2rem;
+  }
+
+  .article-img {
+    margin-left: 2rem;
+    max-width: 350px;
+    object-fit: cover;
+  }
 }
 
-.contact::after{
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -100px;
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid red;
-    border-left: 100vw solid transparent;
-   }
+.button {
+  text-decoration: none;
+  color: red;
+  margin: 0 0.5rem;
+  border: 2px solid white;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5rem;
+}
 
+.button:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+  background-color: red;
+}
 
+.contact {
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  color: white;
+  background-color: red;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
 
+.link:hover {
+  color: white;
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
 
+.link {
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+  border: 2px solid white;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  background-color: white;
+}
 
+footer {
+  padding: 4rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
 
+.about {
+  color: white;
+  background-color: red;
+}
+
+.about::after {
+  content: "";
+  position: relative;
+  right: 0;
+  bottom: -180px;
+  width: 10rem;
+  height: 0;
+  margin-right: 0;
+  margin-left: -100;
+  border-top: 100px solid red;
+  border-right: 100vw solid transparent;
+  padding: 2rem;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 100vw solid transparent;
+}
