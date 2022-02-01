@@ -75,15 +75,17 @@ cite {
     text-align: center;
   }
   .about-me {
-    margin: 0 auto;
+    margin: 5rem;
   }
   .about-image {
     display: block;
     width: 100%;
     max-width: 350px;
-    margin: auto;
     object-fit: contain;
     filter: grayscale(100%);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
   }
 
   article {
@@ -110,6 +112,7 @@ cite {
     text-decoration: none;
     color: red;
     margin-top: 2rem;
+    margin-left: 2rem;
     border: 2px solid white;
     padding: 1rem;
     font-weight: bold;
@@ -119,6 +122,7 @@ cite {
   .resume-text {
     line-height: 1.4em;
     margin-bottom: 2rem;
+    margin-left: 2rem;
   }
 
   .contact-text {
