@@ -131,7 +131,7 @@ cite {
   .article-img {
     max-width: 200px;
     object-fit: contain;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
   .project-button {
     border: 2px solid red;
